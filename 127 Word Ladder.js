@@ -33,6 +33,7 @@
  */
 var ladderLength = function(beginWord, endWord, wordList) {
     var visited = new Set();
+    var wordList = new Set(wordList); 
     var queue = [];
     var level = 1;
     var letters = 'abcdefghijklmnopqrstuvwxyz';
